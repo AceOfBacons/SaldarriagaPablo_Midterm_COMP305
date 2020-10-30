@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1922512891731564994}
   - component: {fileID: -6460299576059550758}
   - component: {fileID: -3184410746554261090}
+  - component: {fileID: 6978063480901882129}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -112,7 +113,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8547021746751496588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -133,8 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f7493a3fa6d1844c80c29dd5c88fd30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 0
-  sideForce: 0
+  speed: 12
 --- !u!50 &-3184410746554261090
 Rigidbody2D:
   serializedVersion: 4
@@ -148,7 +148,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -156,3 +156,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6978063480901882129
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8547021746751496588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 0.8125}
+    newSize: {x: 0.8125, y: 0.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.00014019012, y: 0.4151125}
+      - {x: -0.009464264, y: 0.41215897}
+      - {x: -0.39443302, y: 0.08331871}
+      - {x: -0.21422768, y: -0.4121585}
+      - {x: 0.2112732, y: -0.4180665}
+      - {x: 0.41511154, y: 0.06900978}
