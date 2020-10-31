@@ -15,7 +15,7 @@ public class Chest : MonoBehaviour
 
     public void Update()
     {
-        if(isInRange && Input.GetKeyDown(KeyCode.E))
+        if(isInRange && Input.GetKeyDown("e"))
         {
             anim.SetBool("isOpen", true);
             isOpen = true;
